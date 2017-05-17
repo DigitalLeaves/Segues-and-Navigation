@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661A26D61ECC5DEB004132C8 /* ModalWithUnwindSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661A26D51ECC5DEB004132C8 /* ModalWithUnwindSegueViewController.swift */; };
+		661A26DA1ECC64D3004132C8 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661A26D91ECC64D3004132C8 /* ModalViewController.swift */; };
+		66B816D81ECC3AE5006A298D /* ShowedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B816D71ECC3AE5006A298D /* ShowedViewController.swift */; };
+		66B816DA1ECC3B08006A298D /* ShowedAsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B816D91ECC3B08006A298D /* ShowedAsDetailViewController.swift */; };
+		66B816E01ECC3B2C006A298D /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B816DF1ECC3B2C006A298D /* PopUpViewController.swift */; };
+		66B816E21ECC5232006A298D /* SplitVCMasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B816E11ECC5232006A298D /* SplitVCMasterTableViewController.swift */; };
 		66DD25021EC4EC08003EBFF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD25011EC4EC08003EBFF1 /* AppDelegate.swift */; };
 		66DD25041EC4EC08003EBFF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD25031EC4EC08003EBFF1 /* ViewController.swift */; };
 		66DD25071EC4EC08003EBFF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DD25051EC4EC08003EBFF1 /* Main.storyboard */; };
@@ -15,7 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		66DD24FE1EC4EC08003EBFF1 /* UIControlsTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIControlsTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		661A26D51ECC5DEB004132C8 /* ModalWithUnwindSegueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalWithUnwindSegueViewController.swift; sourceTree = "<group>"; };
+		661A26D91ECC64D3004132C8 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		66B816D71ECC3AE5006A298D /* ShowedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowedViewController.swift; sourceTree = "<group>"; };
+		66B816D91ECC3B08006A298D /* ShowedAsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowedAsDetailViewController.swift; sourceTree = "<group>"; };
+		66B816DF1ECC3B2C006A298D /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		66B816E11ECC5232006A298D /* SplitVCMasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitVCMasterTableViewController.swift; sourceTree = "<group>"; };
+		66DD24FE1EC4EC08003EBFF1 /* Segues and Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Segues and Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DD25011EC4EC08003EBFF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66DD25031EC4EC08003EBFF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		66DD25061EC4EC08003EBFF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +58,7 @@
 		66DD24FF1EC4EC08003EBFF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66DD24FE1EC4EC08003EBFF1 /* UIControlsTests.app */,
+				66DD24FE1EC4EC08003EBFF1 /* Segues and Navigation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +68,12 @@
 			children = (
 				66DD25011EC4EC08003EBFF1 /* AppDelegate.swift */,
 				66DD25031EC4EC08003EBFF1 /* ViewController.swift */,
+				66B816D91ECC3B08006A298D /* ShowedAsDetailViewController.swift */,
+				661A26D51ECC5DEB004132C8 /* ModalWithUnwindSegueViewController.swift */,
+				661A26D91ECC64D3004132C8 /* ModalViewController.swift */,
+				66B816DF1ECC3B2C006A298D /* PopUpViewController.swift */,
+				66B816E11ECC5232006A298D /* SplitVCMasterTableViewController.swift */,
+				66B816D71ECC3AE5006A298D /* ShowedViewController.swift */,
 				66DD25051EC4EC08003EBFF1 /* Main.storyboard */,
 				66DD25081EC4EC08003EBFF1 /* Assets.xcassets */,
 				66DD250A1EC4EC08003EBFF1 /* LaunchScreen.storyboard */,
@@ -67,9 +85,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66DD24FD1EC4EC08003EBFF1 /* UIControlsTests */ = {
+		66DD24FD1EC4EC08003EBFF1 /* Segues and Navigation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66DD25101EC4EC08003EBFF1 /* Build configuration list for PBXNativeTarget "UIControlsTests" */;
+			buildConfigurationList = 66DD25101EC4EC08003EBFF1 /* Build configuration list for PBXNativeTarget "Segues and Navigation" */;
 			buildPhases = (
 				66DD24FA1EC4EC08003EBFF1 /* Sources */,
 				66DD24FB1EC4EC08003EBFF1 /* Frameworks */,
@@ -79,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = UIControlsTests;
+			name = "Segues and Navigation";
 			productName = UIControlsTests;
-			productReference = 66DD24FE1EC4EC08003EBFF1 /* UIControlsTests.app */;
+			productReference = 66DD24FE1EC4EC08003EBFF1 /* Segues and Navigation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66DD24FD1EC4EC08003EBFF1 /* UIControlsTests */,
+				66DD24FD1EC4EC08003EBFF1 /* Segues and Navigation */,
 			);
 		};
 /* End PBXProject section */
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661A26DA1ECC64D3004132C8 /* ModalViewController.swift in Sources */,
+				66B816E21ECC5232006A298D /* SplitVCMasterTableViewController.swift in Sources */,
+				661A26D61ECC5DEB004132C8 /* ModalWithUnwindSegueViewController.swift in Sources */,
 				66DD25041EC4EC08003EBFF1 /* ViewController.swift in Sources */,
+				66B816DA1ECC3B08006A298D /* ShowedAsDetailViewController.swift in Sources */,
+				66B816E01ECC3B2C006A298D /* PopUpViewController.swift in Sources */,
+				66B816D81ECC3AE5006A298D /* ShowedViewController.swift in Sources */,
 				66DD25021EC4EC08003EBFF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,13 +321,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66DD25101EC4EC08003EBFF1 /* Build configuration list for PBXNativeTarget "UIControlsTests" */ = {
+		66DD25101EC4EC08003EBFF1 /* Build configuration list for PBXNativeTarget "Segues and Navigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66DD25111EC4EC08003EBFF1 /* Debug */,
 				66DD25121EC4EC08003EBFF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
