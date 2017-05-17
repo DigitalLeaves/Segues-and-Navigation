@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		661A26D61ECC5DEB004132C8 /* ModalWithUnwindSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661A26D51ECC5DEB004132C8 /* ModalWithUnwindSegueViewController.swift */; };
 		661A26DA1ECC64D3004132C8 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661A26D91ECC64D3004132C8 /* ModalViewController.swift */; };
+		668B0E961ECC7627004309A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DD25081EC4EC08003EBFF1 /* Assets.xcassets */; };
 		66B816D81ECC3AE5006A298D /* ShowedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B816D71ECC3AE5006A298D /* ShowedViewController.swift */; };
 		66B816DA1ECC3B08006A298D /* ShowedAsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B816D91ECC3B08006A298D /* ShowedAsDetailViewController.swift */; };
 		66B816E01ECC3B2C006A298D /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B816DF1ECC3B2C006A298D /* PopUpViewController.swift */; };
@@ -16,7 +17,6 @@
 		66DD25021EC4EC08003EBFF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD25011EC4EC08003EBFF1 /* AppDelegate.swift */; };
 		66DD25041EC4EC08003EBFF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD25031EC4EC08003EBFF1 /* ViewController.swift */; };
 		66DD25071EC4EC08003EBFF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DD25051EC4EC08003EBFF1 /* Main.storyboard */; };
-		66DD25091EC4EC08003EBFF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DD25081EC4EC08003EBFF1 /* Assets.xcassets */; };
 		66DD250C1EC4EC08003EBFF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DD250A1EC4EC08003EBFF1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +50,7 @@
 		66DD24F51EC4EC08003EBFF1 = {
 			isa = PBXGroup;
 			children = (
-				66DD25001EC4EC08003EBFF1 /* UIControlsTests */,
+				66DD25001EC4EC08003EBFF1 /* Segues and Navigation */,
 				66DD24FF1EC4EC08003EBFF1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +63,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66DD25001EC4EC08003EBFF1 /* UIControlsTests */ = {
+		66DD25001EC4EC08003EBFF1 /* Segues and Navigation */ = {
 			isa = PBXGroup;
 			children = (
 				66DD25011EC4EC08003EBFF1 /* AppDelegate.swift */,
@@ -79,7 +79,7 @@
 				66DD250A1EC4EC08003EBFF1 /* LaunchScreen.storyboard */,
 				66DD250D1EC4EC08003EBFF1 /* Info.plist */,
 			);
-			path = UIControlsTests;
+			path = "Segues and Navigation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,7 +98,7 @@
 			dependencies = (
 			);
 			name = "Segues and Navigation";
-			productName = UIControlsTests;
+			productName = "Segues and Navigation";
 			productReference = 66DD24FE1EC4EC08003EBFF1 /* Segues and Navigation.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -119,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 66DD24F91EC4EC08003EBFF1 /* Build configuration list for PBXProject "UIControlsTests" */;
+			buildConfigurationList = 66DD24F91EC4EC08003EBFF1 /* Build configuration list for PBXProject "Segues and Navigation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -142,8 +142,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668B0E961ECC7627004309A8 /* Assets.xcassets in Resources */,
 				66DD250C1EC4EC08003EBFF1 /* LaunchScreen.storyboard in Resources */,
-				66DD25091EC4EC08003EBFF1 /* Assets.xcassets in Resources */,
 				66DD25071EC4EC08003EBFF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,9 +288,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97P9DZHP78;
-				INFOPLIST_FILE = UIControlsTests/Info.plist;
+				INFOPLIST_FILE = "Segues and Navigation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DigitalLeaves.UIControlsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DigitalLeaves.Segues-and-Navigation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -301,9 +301,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97P9DZHP78;
-				INFOPLIST_FILE = UIControlsTests/Info.plist;
+				INFOPLIST_FILE = "Segues and Navigation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DigitalLeaves.UIControlsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DigitalLeaves.Segues-and-Navigation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -312,7 +312,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66DD24F91EC4EC08003EBFF1 /* Build configuration list for PBXProject "UIControlsTests" */ = {
+		66DD24F91EC4EC08003EBFF1 /* Build configuration list for PBXProject "Segues and Navigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66DD250E1EC4EC08003EBFF1 /* Debug */,

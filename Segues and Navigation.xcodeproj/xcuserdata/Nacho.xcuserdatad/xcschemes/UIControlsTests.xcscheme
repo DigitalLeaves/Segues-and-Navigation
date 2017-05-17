@@ -17,7 +17,7 @@
                BlueprintIdentifier = "66DD24FD1EC4EC08003EBFF1"
                BuildableName = "Segues and Navigation.app"
                BlueprintName = "Segues and Navigation"
-               ReferencedContainer = "container:UIControlsTests.xcodeproj">
+               ReferencedContainer = "container:Segues and Navigation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "66DD24FD1EC4EC08003EBFF1"
             BuildableName = "Segues and Navigation.app"
             BlueprintName = "Segues and Navigation"
-            ReferencedContainer = "container:UIControlsTests.xcodeproj">
+            ReferencedContainer = "container:Segues and Navigation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "66DD24FD1EC4EC08003EBFF1"
             BuildableName = "Segues and Navigation.app"
             BlueprintName = "Segues and Navigation"
-            ReferencedContainer = "container:UIControlsTests.xcodeproj">
+            ReferencedContainer = "container:Segues and Navigation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "66DD24FD1EC4EC08003EBFF1"
             BuildableName = "Segues and Navigation.app"
             BlueprintName = "Segues and Navigation"
-            ReferencedContainer = "container:UIControlsTests.xcodeproj">
+            ReferencedContainer = "container:Segues and Navigation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
