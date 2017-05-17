@@ -44,7 +44,7 @@ class SplitVCMasterTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if options[indexPath.row] == "Take me out of here" { self.presentingViewController?.dismiss(animated: true, completion: nil) }
+        if options[indexPath.row] == "Take me out of here" { self.performSegue(withIdentifier: "unwindToMainScreen", sender: nil) }
         else { self.performSegue(withIdentifier: options[indexPath.row], sender: nil) }
     }
     

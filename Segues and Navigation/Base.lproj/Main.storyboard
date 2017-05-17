@@ -220,9 +220,11 @@ Ain't I cool?</string>
                     <connections>
                         <segue destination="UZT-bP-MEe" kind="showDetail" identifier="Show cool guy" id="AMP-h8-58q"/>
                         <segue destination="nNr-PQ-TlZ" kind="showDetail" identifier="Show geek guy" id="NzW-n1-D6g"/>
+                        <segue destination="Gr4-IZ-sVU" kind="unwind" identifier="unwindToMainScreen" unwindAction="unwindToMainScreenWithSegue:" id="LAo-gw-6V0"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yv-GT-7hO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Gr4-IZ-sVU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4881" y="-602"/>
         </scene>
@@ -323,7 +325,7 @@ However, in an iPhone I will appear as a Modal screen. That's why I also need a 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RDA-Xy-Epe">
-                                <rect key="frame" x="16" y="213" width="343" height="240"/>
+                                <rect key="frame" x="16" y="213.5" width="343" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="067-xn-0PH"/>
                                 </constraints>
@@ -720,7 +722,7 @@ I may not be cool, but I am damn good at geeky stuff.</string>
                                 <rect key="frame" x="229" y="617" width="130" height="30"/>
                                 <state key="normal" title="Exit to main screen"/>
                                 <connections>
-                                    <segue destination="OHB-4k-SUB" kind="unwind" unwindAction="unwindToMainScreenWithSegue:" id="QRu-pi-Z4B"/>
+                                    <segue destination="OHB-4k-SUB" kind="unwind" identifier="unwindToMainScreen" unwindAction="unwindToMainScreenWithSegue:" id="WhU-ay-Cwn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -738,9 +740,6 @@ I may not be cool, but I am damn good at geeky stuff.</string>
                             <constraint firstItem="f9K-em-s1z" firstAttribute="top" secondItem="nqZ-jk-ybj" secondAttribute="bottom" constant="20" id="nWr-4H-6iX"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="OHB-4k-SUB" kind="unwind" unwindAction="unwindToMainScreenWithSegue:" id="ap7-i8-mO7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="en5-4z-inP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="OHB-4k-SUB" userLabel="Exit" sceneMemberID="exit"/>
