@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // customize navigation bar
+        UINavigationBar.appearance().barTintColor = UIColor(rgba: "#f5bb00")
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white, NSFontAttributeName: UIFont(name: "Courier", size: 16)!]
+        UINavigationBar.appearance().tintColor = UIColor(rgba: "#BF3100")
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().shadowImage = nil
+        UINavigationBar.appearance().setBackgroundImage(nil, for: .default)
+        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "backArrow")!
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "backArrow")!
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffset(horizontal: 5, vertical: 0), for: .default)
+        
         return true
     }
 

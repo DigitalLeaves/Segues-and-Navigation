@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShowedViewController: ViewController {
+class ShowedViewController: UIViewController {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

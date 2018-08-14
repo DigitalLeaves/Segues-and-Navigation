@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2B5-z6-3V7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2B5-z6-3V7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -276,7 +276,7 @@ Ain't I cool?</string>
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1hj-3r-xHS" id="BRJ-Kd-r1p">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -380,7 +380,39 @@ However, in an iPhone I will appear as a Modal screen. That's why I also need a 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vj7-af-jKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2108" y="1671"/>
+            <point key="canvasLocation" x="1186" y="1674"/>
+        </scene>
+        <!--Custom Navigation Bar-->
+        <scene sceneID="66F-Qf-rBF">
+            <objects>
+                <viewController title="Custom Navigation Bar" id="heh-Gw-1RY" customClass="CustomNavigationBarViewController" customModule="Segues_and_Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rku-wT-rCK"/>
+                        <viewControllerLayoutGuide type="bottom" id="h23-Nd-xkw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sYq-Ep-NkC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello there! I am just a normal View Controller with a custom appearance for my navigation controller bar." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-hf-WWz">
+                                <rect key="frame" x="16" y="244" width="343" height="179.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cbI-hf-WWz" firstAttribute="leading" secondItem="sYq-Ep-NkC" secondAttribute="leading" constant="16" id="Eym-Zo-dKp"/>
+                            <constraint firstItem="cbI-hf-WWz" firstAttribute="centerX" secondItem="sYq-Ep-NkC" secondAttribute="centerX" id="SKl-K0-Ngh"/>
+                            <constraint firstItem="cbI-hf-WWz" firstAttribute="centerY" secondItem="sYq-Ep-NkC" secondAttribute="centerY" id="Vo9-gc-wUm"/>
+                            <constraint firstAttribute="trailing" secondItem="cbI-hf-WWz" secondAttribute="trailing" constant="16" id="y8o-cH-OTL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LwO-Ze-z9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="3438"/>
         </scene>
         <!--Custom image tab-->
         <scene sceneID="TIp-WH-O97">
@@ -421,6 +453,24 @@ Notice how I have a cool custom icon and a badge with 3 important things to show
             </objects>
             <point key="canvasLocation" x="3062" y="2918"/>
         </scene>
+        <!--Another View Controller-->
+        <scene sceneID="9fW-uq-krF">
+            <objects>
+                <viewController id="26u-Sq-tRW" customClass="AnotherViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r7Z-3u-tmT"/>
+                        <viewControllerLayoutGuide type="bottom" id="19d-eC-WhM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9iF-0l-Tox">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tuh-Nr-4UP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3282" y="4009"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="JF2-Zt-Tng">
             <objects>
@@ -454,7 +504,7 @@ Notice how I have a default system image showing some contact-ish icon. This mea
                             <constraint firstAttribute="trailingMargin" secondItem="2hK-Uj-vtO" secondAttribute="trailing" id="a4G-Ax-uG9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="nTF-j4-R6A"/>
+                    <tabBarItem key="tabBarItem" tag="1" badgeValue="3" systemItem="contacts" id="nTF-j4-R6A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XON-tN-q5M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -494,12 +544,12 @@ Notice how I have a default system image showing some contact-ish icon. This mea
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1Z-96-I6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="114"/>
+            <point key="canvasLocation" x="135" y="-454"/>
         </scene>
-        <!--View Controller-->
+        <!--Main-->
         <scene sceneID="8tW-zK-dNv">
             <objects>
-                <viewController id="IvO-sI-F2b" customClass="ViewController" customModule="Segues_and_Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main" id="IvO-sI-F2b" customClass="ViewController" customModule="Segues_and_Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ojG-Xq-2nm"/>
                         <viewControllerLayoutGuide type="bottom" id="hxp-tU-efJ"/>
@@ -509,28 +559,28 @@ Notice how I have a default system image showing some contact-ish icon. This mea
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6SL-Ej-78O">
-                                <rect key="frame" x="32" y="244" width="151.5" height="30"/>
+                                <rect key="frame" x="25" y="244" width="158.5" height="30"/>
                                 <state key="normal" title="Show Segue"/>
                                 <connections>
                                     <action selector="segueToPushViewController:" destination="IvO-sI-F2b" eventType="touchUpInside" id="Y9F-u3-Dt4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCX-z4-zeM">
-                                <rect key="frame" x="32" y="370" width="152" height="30"/>
+                                <rect key="frame" x="25" y="370" width="159" height="30"/>
                                 <state key="normal" title="Show Detail Segue"/>
                                 <connections>
                                     <segue destination="Pct-NU-vtC" kind="showDetail" identifier="replaceSegue" id="tL2-iL-4kq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbl-3O-CTJ">
-                                <rect key="frame" x="192" y="244" width="151.5" height="30"/>
+                                <rect key="frame" x="192" y="244" width="158.5" height="30"/>
                                 <state key="normal" title="Modal Segue"/>
                                 <connections>
                                     <segue destination="o5T-mK-mD5" kind="presentation" identifier="modalSegue" id="D8s-zH-cPd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRc-yW-nle">
-                                <rect key="frame" x="192" y="370" width="151" height="30"/>
+                                <rect key="frame" x="192" y="370" width="158" height="30"/>
                                 <state key="normal" title="Popup Segue"/>
                                 <connections>
                                     <segue destination="cAx-wD-ptz" kind="popoverPresentation" identifier="popupSegue" popoverAnchorView="WRc-yW-nle" id="qMW-DD-g1y">
@@ -539,28 +589,28 @@ Notice how I have a default system image showing some contact-ish icon. This mea
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="push" translatesAutoresizingMaskIntoConstraints="NO" id="6Dg-cj-yJU">
-                                <rect key="frame" x="68" y="156" width="80" height="80"/>
+                                <rect key="frame" x="64.5" y="156" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="hQC-Fe-SVF"/>
                                     <constraint firstAttribute="height" constant="80" id="vdm-Ok-M4R"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modal" translatesAutoresizingMaskIntoConstraints="NO" id="M9f-do-hwQ">
-                                <rect key="frame" x="228" y="156" width="80" height="80"/>
+                                <rect key="frame" x="231.5" y="156" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Ace-pE-C8T"/>
                                     <constraint firstAttribute="width" constant="80" id="Hy4-tt-Sxo"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup" translatesAutoresizingMaskIntoConstraints="NO" id="ERm-YL-Rx5">
-                                <rect key="frame" x="227.5" y="282" width="80" height="80"/>
+                                <rect key="frame" x="231" y="282" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="gfh-9n-xap"/>
                                     <constraint firstAttribute="height" constant="80" id="uJr-0y-wah"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segues And Navigation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="deu-Gg-YNS">
-                                <rect key="frame" x="32" y="84" width="311" height="64"/>
+                                <rect key="frame" x="25" y="84" width="325" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="F7P-pN-bVs"/>
                                 </constraints>
@@ -569,75 +619,92 @@ Notice how I have a default system image showing some contact-ish icon. This mea
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4h-br-ibH">
-                                <rect key="frame" x="32" y="496" width="152" height="30"/>
+                                <rect key="frame" x="25" y="496" width="159" height="30"/>
                                 <state key="normal" title="Split VC"/>
                                 <connections>
                                     <segue destination="0Pg-zL-WzI" kind="presentation" identifier="toSplitVCSegue" id="L4Q-jk-KzB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEz-Bm-YpH">
-                                <rect key="frame" x="192" y="496" width="151" height="30"/>
+                                <rect key="frame" x="192" y="496" width="158" height="30"/>
                                 <state key="normal" title="Tab Bar VC"/>
                                 <connections>
                                     <segue destination="UuN-AE-t54" kind="show" identifier="tabBarVCSegue" id="Fav-jt-78e"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbarvc" translatesAutoresizingMaskIntoConstraints="NO" id="HTb-iu-nUQ">
-                                <rect key="frame" x="227" y="408" width="80" height="80"/>
+                                <rect key="frame" x="230.5" y="408" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="P4H-pn-Hlx"/>
                                     <constraint firstAttribute="width" constant="80" id="nbq-T4-CxL"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splitvc" translatesAutoresizingMaskIntoConstraints="NO" id="3uO-yX-wYK">
-                                <rect key="frame" x="68" y="408" width="80" height="80"/>
+                                <rect key="frame" x="64.5" y="408" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="NUA-f2-pNp"/>
                                     <constraint firstAttribute="height" constant="80" id="PLV-Yv-tdW"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="replace" translatesAutoresizingMaskIntoConstraints="NO" id="YVD-MR-Pri">
-                                <rect key="frame" x="68" y="282" width="80" height="80"/>
+                                <rect key="frame" x="64.5" y="282" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="036-fQ-SBp"/>
                                     <constraint firstAttribute="height" constant="80" id="F55-sj-gHI"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPH-fI-qQX">
-                                <rect key="frame" x="111.5" y="622" width="152" height="30"/>
-                                <state key="normal" title="Bootstrap Style Modal"/>
+                                <rect key="frame" x="25" y="622" width="159" height="30"/>
+                                <state key="normal" title="Bootstrap Modal"/>
                                 <connections>
                                     <action selector="showBootstrapStyleModal:" destination="IvO-sI-F2b" eventType="touchUpInside" id="I1i-Da-kPf"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bootstrap modal" translatesAutoresizingMaskIntoConstraints="NO" id="xYH-lt-6EU">
-                                <rect key="frame" x="147" y="534" width="80" height="80"/>
+                                <rect key="frame" x="64" y="534" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="imL-9z-Ye8"/>
                                     <constraint firstAttribute="height" constant="80" id="kDZ-IN-pfZ"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M90-uh-2rv">
+                                <rect key="frame" x="192" y="622" width="158" height="30"/>
+                                <state key="normal" title="Custom Navigation Bar"/>
+                                <connections>
+                                    <segue destination="heh-Gw-1RY" kind="show" id="L7q-cH-Xr8"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation bar" translatesAutoresizingMaskIntoConstraints="NO" id="YYg-XF-2Ry">
+                                <rect key="frame" x="231" y="534" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="hvW-pL-D8K"/>
+                                    <constraint firstAttribute="width" constant="80" id="rU0-qA-rrG"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="M90-uh-2rv" firstAttribute="trailing" secondItem="cEz-Bm-YpH" secondAttribute="trailing" id="0am-Hv-s5M"/>
                             <constraint firstItem="deu-Gg-YNS" firstAttribute="top" secondItem="ojG-Xq-2nm" secondAttribute="bottom" constant="20" id="1g7-iO-isJ"/>
                             <constraint firstItem="WRc-yW-nle" firstAttribute="centerX" secondItem="ERm-YL-Rx5" secondAttribute="centerX" id="1ia-3c-4eA"/>
                             <constraint firstItem="SPH-fI-qQX" firstAttribute="top" secondItem="xYH-lt-6EU" secondAttribute="bottom" constant="8" id="24Q-wb-Psf"/>
                             <constraint firstItem="Mbl-3O-CTJ" firstAttribute="trailing" secondItem="deu-Gg-YNS" secondAttribute="trailing" id="2Ru-a7-OVH"/>
                             <constraint firstItem="cEz-Bm-YpH" firstAttribute="leading" secondItem="w4h-br-ibH" secondAttribute="trailing" constant="8" id="3K7-oJ-bzQ"/>
                             <constraint firstItem="xYH-lt-6EU" firstAttribute="top" secondItem="w4h-br-ibH" secondAttribute="bottom" constant="8" id="3YJ-8y-xOD"/>
+                            <constraint firstItem="YYg-XF-2Ry" firstAttribute="centerX" secondItem="M90-uh-2rv" secondAttribute="centerX" id="51R-O3-sRq"/>
                             <constraint firstItem="M9f-do-hwQ" firstAttribute="centerX" secondItem="Mbl-3O-CTJ" secondAttribute="centerX" id="8b9-ah-meg"/>
                             <constraint firstItem="WRc-yW-nle" firstAttribute="trailing" secondItem="Mbl-3O-CTJ" secondAttribute="trailing" id="AYX-QQ-3a7"/>
                             <constraint firstItem="qCX-z4-zeM" firstAttribute="bottom" secondItem="WRc-yW-nle" secondAttribute="bottom" id="B8G-Jl-Ung"/>
                             <constraint firstItem="6SL-Ej-78O" firstAttribute="top" secondItem="6Dg-cj-yJU" secondAttribute="bottom" constant="8" id="BFe-8y-HNr"/>
                             <constraint firstItem="WRc-yW-nle" firstAttribute="leading" secondItem="qCX-z4-zeM" secondAttribute="trailing" constant="8" id="FCb-gP-OKz"/>
                             <constraint firstItem="w4h-br-ibH" firstAttribute="bottom" secondItem="cEz-Bm-YpH" secondAttribute="bottom" id="FPb-Se-CYh"/>
+                            <constraint firstItem="SPH-fI-qQX" firstAttribute="trailing" secondItem="w4h-br-ibH" secondAttribute="trailing" id="HYI-8p-Sk2"/>
                             <constraint firstItem="WRc-yW-nle" firstAttribute="leading" secondItem="Mbl-3O-CTJ" secondAttribute="leading" id="I2h-oQ-E2n"/>
                             <constraint firstItem="w4h-br-ibH" firstAttribute="leading" secondItem="qCX-z4-zeM" secondAttribute="leading" id="I5E-Vu-AWg"/>
                             <constraint firstItem="Mbl-3O-CTJ" firstAttribute="leading" secondItem="6SL-Ej-78O" secondAttribute="trailing" constant="8" id="KO2-1v-g6u"/>
                             <constraint firstItem="6Dg-cj-yJU" firstAttribute="top" secondItem="deu-Gg-YNS" secondAttribute="bottom" constant="8" id="L2v-R0-Av9"/>
                             <constraint firstItem="xYH-lt-6EU" firstAttribute="centerX" secondItem="SPH-fI-qQX" secondAttribute="centerX" id="LSS-CC-ocj"/>
-                            <constraint firstItem="xYH-lt-6EU" firstAttribute="centerX" secondItem="uGD-G3-bwN" secondAttribute="centerX" id="NmQ-8l-bEI"/>
+                            <constraint firstItem="SPH-fI-qQX" firstAttribute="leading" secondItem="w4h-br-ibH" secondAttribute="leading" id="LrS-Jg-hgK"/>
                             <constraint firstItem="cEz-Bm-YpH" firstAttribute="top" secondItem="HTb-iu-nUQ" secondAttribute="bottom" constant="8" id="OGO-5b-xMX"/>
                             <constraint firstItem="Mbl-3O-CTJ" firstAttribute="top" secondItem="6SL-Ej-78O" secondAttribute="top" id="QS7-C5-9X0"/>
                             <constraint firstItem="YVD-MR-Pri" firstAttribute="centerX" secondItem="qCX-z4-zeM" secondAttribute="centerX" id="QZC-9c-rPz"/>
@@ -646,24 +713,28 @@ Notice how I have a default system image showing some contact-ish icon. This mea
                             <constraint firstItem="w4h-br-ibH" firstAttribute="top" secondItem="3uO-yX-wYK" secondAttribute="bottom" constant="8" id="TSH-1n-Yl9"/>
                             <constraint firstItem="ERm-YL-Rx5" firstAttribute="top" secondItem="Mbl-3O-CTJ" secondAttribute="bottom" constant="8" id="X1J-hh-iy5"/>
                             <constraint firstItem="qCX-z4-zeM" firstAttribute="top" secondItem="WRc-yW-nle" secondAttribute="top" id="Ycx-Fl-2xs"/>
+                            <constraint firstItem="M90-uh-2rv" firstAttribute="top" secondItem="YYg-XF-2Ry" secondAttribute="bottom" constant="8" id="Zsn-lF-4nm"/>
                             <constraint firstItem="Mbl-3O-CTJ" firstAttribute="top" secondItem="M9f-do-hwQ" secondAttribute="bottom" constant="8" id="acG-MC-DWv"/>
                             <constraint firstItem="qCX-z4-zeM" firstAttribute="trailing" secondItem="6SL-Ej-78O" secondAttribute="trailing" id="b90-Qr-uE9"/>
                             <constraint firstItem="Mbl-3O-CTJ" firstAttribute="bottom" secondItem="6SL-Ej-78O" secondAttribute="bottom" id="bRL-Da-sOB"/>
                             <constraint firstItem="6Dg-cj-yJU" firstAttribute="centerX" secondItem="6SL-Ej-78O" secondAttribute="centerX" id="cN4-oX-wsN"/>
                             <constraint firstItem="WRc-yW-nle" firstAttribute="top" secondItem="ERm-YL-Rx5" secondAttribute="bottom" constant="8" id="eDe-Zp-9Gm"/>
                             <constraint firstItem="6SL-Ej-78O" firstAttribute="width" secondItem="Mbl-3O-CTJ" secondAttribute="width" id="gV4-d0-9oe"/>
+                            <constraint firstItem="M90-uh-2rv" firstAttribute="leading" secondItem="cEz-Bm-YpH" secondAttribute="leading" id="hWO-Aa-uuC"/>
                             <constraint firstItem="cEz-Bm-YpH" firstAttribute="trailing" secondItem="WRc-yW-nle" secondAttribute="trailing" id="iiK-IH-SES"/>
                             <constraint firstItem="deu-Gg-YNS" firstAttribute="centerX" secondItem="uGD-G3-bwN" secondAttribute="centerX" id="kRn-2l-Frn"/>
                             <constraint firstItem="qCX-z4-zeM" firstAttribute="leading" secondItem="6SL-Ej-78O" secondAttribute="leading" id="lnY-2k-quD"/>
+                            <constraint firstItem="M90-uh-2rv" firstAttribute="top" secondItem="SPH-fI-qQX" secondAttribute="top" id="n1n-ui-z8Z"/>
                             <constraint firstItem="cEz-Bm-YpH" firstAttribute="centerX" secondItem="HTb-iu-nUQ" secondAttribute="centerX" id="oSl-bb-XDV"/>
                             <constraint firstItem="3uO-yX-wYK" firstAttribute="centerX" secondItem="w4h-br-ibH" secondAttribute="centerX" id="ocM-7l-EDJ"/>
                             <constraint firstItem="3uO-yX-wYK" firstAttribute="top" secondItem="qCX-z4-zeM" secondAttribute="bottom" constant="8" id="pQC-ee-Lbq"/>
                             <constraint firstItem="w4h-br-ibH" firstAttribute="top" secondItem="cEz-Bm-YpH" secondAttribute="top" id="paG-ay-lB2"/>
+                            <constraint firstItem="M90-uh-2rv" firstAttribute="bottom" secondItem="SPH-fI-qQX" secondAttribute="bottom" id="rTX-t1-RwP"/>
                             <constraint firstItem="w4h-br-ibH" firstAttribute="trailing" secondItem="qCX-z4-zeM" secondAttribute="trailing" id="rnA-Ia-fJm"/>
                             <constraint firstItem="qCX-z4-zeM" firstAttribute="top" secondItem="YVD-MR-Pri" secondAttribute="bottom" constant="8" id="wQo-Ah-nDd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="tfm-E3-Xeo"/>
+                    <navigationItem key="navigationItem" title="Main" id="tfm-E3-Xeo"/>
                     <connections>
                         <segue destination="AY1-rj-lnt" kind="show" identifier="pushSegue" id="OHe-tv-3ra"/>
                     </connections>
@@ -835,7 +906,7 @@ I may not be cool, but I am damn good at geeky stuff.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="en5-4z-inP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="OHB-4k-SUB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5150" y="821"/>
+            <point key="canvasLocation" x="3633" y="821"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="tJz-DP-8dm">
@@ -894,7 +965,7 @@ I may not be cool, but I am damn good at geeky stuff.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VC0-bX-oIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4295" y="821"/>
+            <point key="canvasLocation" x="2878" y="821"/>
         </scene>
     </scenes>
     <resources>
@@ -902,6 +973,7 @@ I may not be cool, but I am damn good at geeky stuff.</string>
         <image name="dlLogo" width="49" height="49"/>
         <image name="dlLogoGrey" width="49" height="49"/>
         <image name="modal" width="200" height="200"/>
+        <image name="navigation bar" width="200" height="200"/>
         <image name="popup" width="200" height="200"/>
         <image name="push" width="200" height="200"/>
         <image name="replace" width="200" height="200"/>
